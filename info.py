@@ -102,3 +102,9 @@ def count_parameters(model: nn.Module) -> tuple[int, int]:
     total_params = sum(p.numel() for p in model.parameters())
     trainable_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
     return total_params, trainable_params
+
+
+if __name__ == "__main__":
+    from module.Boundary import BoundaryAttentionModule
+    model = BoundaryAttentionModule(3, 64, 8)
+    print(count_parameters(model))
