@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual Environment
+venv/
+
+# local data
+data/
+run/
+
+# modules
+*.pth
+*.pt
+*.onnx
+
+# vscode
+.vscode/
+.dist/
+
+# other
+test.jpg
+test.png
